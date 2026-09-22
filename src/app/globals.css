@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf8f4;
+  --surface: #ffffff;
+  --surface-sunken: #f2efe8;
+  --foreground: #17181a;
+  --muted: #6b6a63;
+  --border: #e4e0d6;
+  --border-strong: #cfc9b8;
+
+  --brand: #0f6e5e;
+  --brand-strong: #0b5347;
+  --brand-soft: #e2efe9;
+
+  --accent: #c9762b;
+  --accent-soft: #f8e9d9;
+
+  --success: #1b7a4a;
+  --success-soft: #e3f3e9;
+  --warning: #b4791f;
+  --warning-soft: #faf0dd;
+  --danger: #b23b3b;
+  --danger-soft: #fbe9e9;
+  --info: #2d6fa6;
+  --info-soft: #e5f0f8;
+
+  --ring: #0f6e5e;
+
+  /*
+   * System font stacks — deliberately not next/font/google (see
+   * src/app/layout.tsx). --font-display pairs a serif for an editorial,
+   * "atlas/ledger" feel against the sans UI type, per this project's visual
+   * identity (see docs/ARCHITECTURE.md).
+   */
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Source Serif Pro", serif;
+  --font-sans: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono", Consolas, monospace;
+}
+
+:root[data-theme="dark"] {
+  --background: #0e1116;
+  --surface: #161a20;
+  --surface-sunken: #11141a;
+  --foreground: #edeae1;
+  --muted: #9a988f;
+  --border: #262b33;
+  --border-strong: #343a44;
+
+  --brand: #33a88f;
+  --brand-strong: #4dc2a7;
+  --brand-soft: #142a25;
+
+  --accent: #e0993f;
+  --accent-soft: #2c2114;
+
+  --success: #3fb87a;
+  --success-soft: #12281c;
+  --warning: #e0a53f;
+  --warning-soft: #2c2414;
+  --danger: #e0716b;
+  --danger-soft: #2c1616;
+  --info: #5b9bd0;
+  --info-soft: #142430;
+
+  --ring: #33a88f;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-sunken: var(--surface-sunken);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-soft: var(--brand-soft);
+
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+
+  --color-ring: var(--ring);
+
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--brand-soft);
+  color: var(--brand-strong);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.25s ease-out;
+}
