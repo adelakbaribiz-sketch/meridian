@@ -1,5 +1,7 @@
 # Meridian
 
+**Where science parks, venture capital and startups find each other — with matching you can explain, not just a score.**
+
 **Meridian** is a multi-role SaaS platform concept that connects science &
 technology parks, venture investors, startups, and event organizers around one
 shared, structured view of an innovation ecosystem — with transparent,
@@ -54,6 +56,10 @@ feature scope and what was deliberately left out of this MVP.
 | ![Landing page with the transparent-matching explainer](docs/screenshots/landing.png) | ![Startups ranked by fit, each with a factor-by-factor match compass](docs/screenshots/matches.png) |
 | **Deal room (kanban)** | **Startup profile** |
 | ![Deal room pipeline by stage](docs/screenshots/deal-room.png) | ![Startup profile with top investor matches and fundraise status](docs/screenshots/startup-profile.png) |
+
+| Mobile | Dark theme |
+|---|---|
+| <img src="docs/screenshots/mobile.png" alt="VC Manager dashboard on a phone-sized screen" width="260"> | ![VC Manager dashboard in dark theme](docs/screenshots/dashboard-dark.png) |
 
 *Captured from the prototype running locally. Every startup, investor, park, event and deal is
 fictional seed data, and sign-in is a demo persona picker, not real authentication — see Quickstart
