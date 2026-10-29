@@ -57,9 +57,13 @@ feature scope and what was deliberately left out of this MVP.
 | **Deal room (kanban)** | **Startup profile** |
 | ![Deal room pipeline by stage](docs/screenshots/deal-room.png) | ![Startup profile with top investor matches and fundraise status](docs/screenshots/startup-profile.png) |
 
-| Mobile | Dark theme |
-|---|---|
-| <img src="docs/screenshots/mobile.png" alt="VC Manager dashboard on a phone-sized screen" width="260"> | ![VC Manager dashboard in dark theme](docs/screenshots/dashboard-dark.png) |
+<p>
+  <img src="docs/screenshots/mobile.png" alt="VC Manager dashboard on a phone-sized screen" width="240">
+  &nbsp;
+  <img src="docs/screenshots/dashboard-dark.png" alt="VC Manager dashboard in dark theme" width="600">
+</p>
+
+*Left: phone-sized screen (390 px wide). Right: dark theme.*
 
 *Captured from the prototype running locally. Every startup, investor, park, event and deal is
 fictional seed data, and sign-in is a demo persona picker, not real authentication — see Quickstart
