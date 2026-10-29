@@ -13,6 +13,8 @@ explainable matching instead of manual introductions.
 
 **Status:** Prototype / MVP demo. See [docs/PORTFOLIO_CASE_STUDY.md](docs/PORTFOLIO_CASE_STUDY.md).
 
+![VC Manager dashboard — pipeline by stage, fund focus and top suggested matches (fictional seed data)](docs/screenshots/dashboard-vc.png)
+
 ---
 
 ## Problem
@@ -47,15 +49,15 @@ feature scope and what was deliberately left out of this MVP.
 
 ## Screenshots
 
-| Landing page | Role dashboard (VC Manager) |
+| Landing page | Explainable matches |
 |---|---|
-| Hero, problem framing, transparent-matching explainer, proposed pricing | KPIs, deal pipeline funnel, top AI-suggested matches |
+| ![Landing page with the transparent-matching explainer](docs/screenshots/landing.png) | ![Startups ranked by fit, each with a factor-by-factor match compass](docs/screenshots/matches.png) |
+| **Deal room (kanban)** | **Startup profile** |
+| ![Deal room pipeline by stage](docs/screenshots/deal-room.png) | ![Startup profile with top investor matches and fundraise status](docs/screenshots/startup-profile.png) |
 
-| Deal room (kanban) | Startup profile |
-|---|---|
-| Pipeline by stage, drag-free kanban, document status | Match compass, top investor matches, deal activity |
-
-*(Run the app locally to see these live — see Quickstart below.)*
+*Captured from the prototype running locally. Every startup, investor, park, event and deal is
+fictional seed data, and sign-in is a demo persona picker, not real authentication — see Quickstart
+below to run it yourself.*
 
 ## Tech stack
 
